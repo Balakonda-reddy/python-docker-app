@@ -27,5 +27,5 @@ jobs:
       - name: Update image on server
         run: |
              ssh -i $HOME/key.pem -o StrictHostKeyChecking=no ubuntu@34.217.101.197
-             touch /home/ubuntu/test.txt
+             pwd
              ls -la /home/ubuntu/
