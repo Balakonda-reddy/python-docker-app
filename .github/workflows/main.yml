@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+#       - name: Checkout
+#         uses: actions/checkout@v2
 
 
 
@@ -27,5 +27,5 @@ jobs:
       - name: Update image on server
         run: |
              ssh -i $HOME/key.pem -o StrictHostKeyChecking=no ubuntu@34.217.101.197
-             touch test.txt
-             ls
+             touch /home/ubuntu/test.txt
+             ls -la /home/ubuntu/
