@@ -26,6 +26,7 @@ jobs:
           chmod 400 $HOME/key.pem
       - name: Update image on server
         run: |
-             ssh -i $HOME/key.pem -o StrictHostKeyChecking=no ubuntu@34.217.101.197
-             pwd
-             ls -la /home/ubuntu/
+             ssh -i $HOME/key.pem -o StrictHostKeyChecking=no ubuntu@34.217.101.197 "
+               pwd
+               touch test.txt
+               ls -la /home/ubuntu/* "
